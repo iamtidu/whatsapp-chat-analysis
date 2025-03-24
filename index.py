@@ -15,8 +15,8 @@ if uploaded_file is not None:
     user_list = df['user'].dropna().unique().tolist()
 
     # Remove 'group_notification' if present
-    if 'group_notification' in user_list:
-        user_list.remove('group_notification')
+    #if 'group_notification' in user_list:
+    user_list.remove('group_notification')
 
     user_list.sort()
     user_list.insert(0, "Overall")
