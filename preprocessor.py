@@ -39,6 +39,6 @@ def preprocess(data):
     df['minute'] = df['date'].dt.minute
 
     # Creating 'period' column
-    df['period'] = df['hour'].apply(lambda h: f"{h}-{'00' if h == 23 else h+1}")
+    #df['period'] = df['hour'].apply(lambda h: f"{h}-{'00' if h == 23 else h+1}")
 
     return df
